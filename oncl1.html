@@ -1,0 +1,70 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Check a number is prime or not</title>
+<script>
+function test_prime(n)
+{
+
+  if (n===1)
+  {
+    return false;
+  }
+  else if(n === 2)
+  {
+    return true;
+  }else
+  {
+    for(var x = 2; x < n; x++)
+    {
+      if(n % x === 0)
+      {
+        return false;
+      }
+    }
+    return true;  
+  }
+}
+
+document.write(test_prime(37));
+</script>
+</head>
+<body>
+ 
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+    <script>
+        function isPrime (number) {
+            var flag = 1
+            for(i=2;i<number;i++) {
+                if (number%i==0) {
+                    flag = 0
+                    break;
+                }}
+            return flag
+        }
+        function listPrime () {
+            let list = [];
+            for (j=2;j<=10000;j++){ 
+                if (isPrime(j) == 1) {
+                    list.push(j);
+                }
+            } 
+            return list
+        }
+        let result = listPrime () 
+        console.log(result);
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+     <div id="result"></div>
+    <script>
+         let arr1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe','Regulus'];
+        let arr2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa', 'Major', 'Leo'];
+        function matchStar(str){
+            for(let i=0;i<arr1.length;i++){
+                if (arr1[i]==str) {
+                    return arr2[i];
+                } else {
+                    return "You star is not included in array"
+                }
+            }
+        }
+        let a = prompt("Input a star name");
+        let result = matchStar(a);
+        document.write(matchStar(a));
+    </script>
+</body>
+</html>
